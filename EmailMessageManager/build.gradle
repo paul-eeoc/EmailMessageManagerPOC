@@ -23,7 +23,8 @@ repositories {
 }
 
 dependencies {
-	implementation("com.icegreen:greenmail")
+	//implementation("com.icegreen:greenmail")
+	//testCompile group: 'com.icegreen', name: 'greenmail', version: '1.5.9'
 	implementation("org.springframework.boot:spring-boot-starter-mail")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")

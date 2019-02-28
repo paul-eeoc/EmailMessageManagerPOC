@@ -16,7 +16,7 @@ public class MessageListener {
 	@RabbitListener(queues = "emaillist")
 	public void receiveMessage(Long charSequenceId) throws InterruptedException {
 		System.out.println(Thread.currentThread().getName()+": Received Message with Unique CharSequenceId:" + charSequenceId+ "--" + Thread.currentThread().getName());
-		messageProcessingService.retriveAndSendEmail(charSequenceId);
+		messageProcessingService.retrieveAndSendEmail(charSequenceId);
 	}
 }
 	

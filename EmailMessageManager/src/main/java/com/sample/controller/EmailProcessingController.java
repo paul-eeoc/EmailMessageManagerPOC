@@ -23,9 +23,9 @@ public class EmailProcessingController {
     *  -> Saves to DB
     *  -> Sends to queue
     */
-	@PostMapping(value="/email", consumes={MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_UTF8_VALUE} )
+	@PostMapping(value="/email", consumes={MediaType.APPLICATION_XML_VALUE, MediaType.TEXT_XML_VALUE, MediaType.APPLICATION_JSON_UTF8_VALUE} )
 	public void processEmails(@RequestBody InitiateEmailDTO initiateEmailDTO) {
 		System.out.println("~~~~~Step:1 - Request Received "+initiateEmailDTO.toString()+"~~~~~");
-		processEmailsService.insertAndQueue(initiateEmailDTO);
+		//processEmailsService.insertAndQueue(initiateEmailDTO);
 	}
 }

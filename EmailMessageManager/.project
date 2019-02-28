@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>EmailMessageManager</name>
-	<comment>Project EmailMessageManager created by Buildship.</comment>
+	<name>EmailMessageManagerPOC</name>
+	<comment>Project EmailMessageManagerPOC created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
